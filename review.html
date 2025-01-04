@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave a Review</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="review.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Leave a Review</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="building.html">Building</a>
+      <a href="mining.html">Mining</a>
+      <a href="pet-leveling.html">Pet Leveling</a>
+      <a href="extra-services.html">Extra Services</a>
+      <a href="review.html">Review</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Review Submission Form -->
+    <section id="submit-review">
+      <h2>Submit Your Review</h2>
+      <form id="review-form">
+        <!-- Select Service -->
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+          <option value="Mining">Mining</option>
+          <option value="Building">Building</option>
+          <option value="Pet Leveling">Pet Leveling</option>
+        </select>
+
+        <!-- Rate the Service -->
+        <label for="rating">Rate the Service:</label>
+        <div id="rating-stars">
+          <span class="star" data-value="1">&#9734;</span>
+          <span class="star" data-value="2">&#9734;</span>
+          <span class="star" data-value="3">&#9734;</span>
+          <span class="star" data-value="4">&#9734;</span>
+          <span class="star" data-value="5">&#9734;</span>
+        </div>
+        <input type="hidden" id="rating" name="rating" value="0">
+
+        <!-- Your Review -->
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" rows="4" placeholder="Share your thoughts..." required></textarea>
+
+        <!-- In-game Username -->
+        <label for="username">In-game Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <button type="submit">Submit Review</button>
+      </form>
+      <p id="thank-you-message" style="display: none;">Thank you for your review!</p>
+    </section>
+
+    <!-- Display Reviews -->
+    <section id="display-reviews">
+      <h2>Customer Reviews</h2>
+      <div id="reviews-list">
+        <!-- Reviews will be dynamically added here -->
+        <p>No reviews yet. Be the first to leave one!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Qbee Services. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

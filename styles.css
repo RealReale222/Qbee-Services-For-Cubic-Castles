@@ -1,0 +1,35 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #a8ff78, #78ffd6);
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 1.5rem;
+}
+
+/* Form Styling */
+f
